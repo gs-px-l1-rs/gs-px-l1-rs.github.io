@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Donut Whole | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="js/login.js"></script>
+    <script defer src="js/recipe.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="main">
+            <nav>
+                <ul>
+                    <li><a href="login.html"style="text-decoration: underline;">My Account</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li id="logo"><a href="index.html">Donut Whole</a></li>
+                    <li><a href="login.html">logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div><!-- end container-->
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"><br>
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"><br>
+          <input type="submit" value="Login" id="login-form-submit" ><input type="submit" value="Hint" id="hint-button">
+
+        </form>
+      
+      </main>
+</body>

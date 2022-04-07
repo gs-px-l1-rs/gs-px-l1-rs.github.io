@@ -1,0 +1,362 @@
+/* ===============================
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   ===============================
+   
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Open Sans', sans-serif;
+
+*/
+   
+
+/* General */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+   color: #4b2707;
+   font-size: 14px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+iframe{
+   box-shadow: 0px 0px 5px 2px black;
+}
+.container {
+   width: 924px;
+   margin: 0 auto;
+   padding: 30px 24px;
+}
+/* Typography */
+h1,h2{
+   color: #d17f38;
+   font-size: 40px;
+   font-weight: normal;
+   line-height: 44px;
+   margin: 0;
+   font-family: 'Love Ya Like A Sister', cursive;
+}
+
+h1{
+   text-align: center;
+   padding: 0 0 20px;
+   background: url('../images/header-divider.png') bottom center no-repeat;
+}
+h1 em{
+   font-style: normal;
+   color: #4b2707;
+}
+
+h2{
+   font-size: 34px;
+}
+
+h3{
+   margin: 0;
+}
+
+p.lead {
+   font-size: 30px;
+   font-weight: 300;
+   text-align: center;
+   margin: 10px 0;
+}
+
+p{
+   margin: 0;
+}
+
+a:link {
+   color: #d17f38;
+}
+
+a:visited {
+   color: #d17f38;
+}
+a:hover {
+   color: #4b2707;
+}
+hr {
+   border: none;
+   height: 33px;
+   width: 330px;
+   margin: 30px auto;
+   background: url('../images/divider.png') center center no-repeat;
+}
+
+/* Header */
+header nav{
+   text-align: center;
+
+}
+
+header nav ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: block;
+   line-height: 141px;
+}
+
+header nav ul li{
+   display: inline-block;
+   padding: 0 24px;
+}
+
+header nav ul li a{
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+header nav ul li a:hover{
+   color: #4b2707;
+   padding-top: 20px;
+   background: url('../images/tiny-donut.png') top center no-repeat;
+}
+
+header nav ul li#logo a{
+   display: block;
+   width: 292px;
+   height: 141px;
+   background: url('../images/logo.png') center center no-repeat;
+   text-indent: -99999px;
+
+}
+
+header nav ul li#logo a:hover{
+   padding: 0;
+   background: url('../images/logo-hover.png') center center no-repeat;
+}
+
+/* Hero */
+#hero{
+   background: #e8c04f url('../images/bg-tile-yellow.gif') top left repeat;
+}
+
+#hero .container{
+   position: relative;
+}
+#location{
+   width:600px;
+   height:450px;
+   border: none;
+   margin-left: 160px;
+}
+
+#location_text{
+   text-align: center;
+   color: #4b2707;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+#hero .large-ribbon{
+   height: 190px;
+   width: 150px;
+   background: url('../images/fresh-whole-ingredients.png') top left no-repeat;
+   text-indent: -99999px;
+   position: absolute;
+   top:-23px;
+   right: -30px;
+}
+
+/* The Whole Story */
+#story-excerpt{
+   width: 530px;
+   margin-right: 24px;
+   float: left;
+   font-size: 16px;
+}
+
+#best-donut{
+   background: url('../images/award.png') left center no-repeat;
+   padding: 30px 0 30px 130px;
+   float:left;
+   width: 240px;
+}
+/* News & Events */
+#articles {
+	width: 370px;
+	float: left;
+	margin-right: 24px;
+}
+
+#feature-image {
+	width: 530px;
+	float: left;
+}
+
+#news-event article {
+	margin: 20px 0;
+	padding-left: 55px;
+}
+
+#news-event article.news {
+	background: url('../images/icon-news.png') top left no-repeat;
+}
+
+#news-event article.event {
+	background: url('../images/icon-calendar.png') top left no-repeat;
+}
+
+#news-event header time {
+	color: #d17f38;
+	font-size: 12px;
+}
+
+#news-event section.excerpt {
+	margin: 10px 0;
+}
+
+#news-event footer {
+	font-size: 12px;
+}
+
+#recipe-form{
+   margin: 0 auto 16px;
+}
+
+#recipe-title{
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+/* Footer */
+
+footer.main{
+   background: #4b2707 url('../images/bg-tile-brown.gif') top left repeat;
+   color: #f2f3ee;
+   padding: 30px 0;
+}
+
+footer.main a:hover{
+   color: #f2f3ee;
+}
+
+#uncopyright, #credits{
+   width: 240px;
+   float: left;
+   padding: 10px 0 10px 50px;
+}
+#uncopyright{
+   background: url('../images/icon-recycle.png') center left no-repeat;
+}
+#credits{
+   background: url('../images/icon-apple.png') center left no-repeat;
+   float: right;
+   margin-top: 5px;
+}
+
+/*login form*/
+#main-holder {
+   width: 50%;
+   height: 70%;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 7px;
+   box-shadow: 0px 0px 5px 2px black;
+   margin: 40px auto;
+   padding: 30px 0;
+ }
+ 
+ #login-error-msg-holder {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+ }
+ 
+ #login-error-msg {
+   width: 23%;
+   text-align: center;
+   margin: 0;
+   padding: 5px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #8a0000;
+   border: 1px solid #8a0000;
+   background-color: #dddddd;
+   opacity: 0;
+ }
+ 
+ #error-msg-second-line {
+   display: block;
+ }
+ 
+ #login-form {
+   align-self: flex-start;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+ }
+ 
+ .login-form-field::placeholder {
+   color: #3a3a3a;
+ }
+ 
+ .login-form-field {
+   border: none;
+   border-bottom: 1px solid #3a3a3a;
+   margin-bottom: 10px;
+   border-radius: 3px;
+   outline: none;
+   padding: 0px 0px 5px 5px;
+ }
+ 
+ #login-form-submit {
+   width: 100%;
+   padding: 7px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-weight: bold;
+   background-color: #3a3a3a;
+   cursor: pointer;
+   outline: none;
+ }
+
+ #hint-button{
+   width: 100%;
+   padding: 7px;
+   margin-top: 8px;
+   border: 1px dotted #3a3a3a;
+   border-radius: 5px;
+   color: #3a3a3a;
+   font-weight: bold;
+   background-color: white;
+   cursor: pointer;
+   outline: none;
+ }
+ 
+ input.nobord {
+   border: none transparent;
+   outline: none;
+   background: #f2f3ee url(../images/bg-tile.gif) top left repeat;
+   margin-left: 20px;
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
