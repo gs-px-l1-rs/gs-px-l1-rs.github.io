@@ -11,8 +11,9 @@ const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 const hintButton = document.getElementById("hint-button");
 
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
+loginButton.addEventListener("click", (uclick) => {
+    uclick.preventDefault();
+    alert("clicked");
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
     var userId = uEmail.substr(3,5);
@@ -51,8 +52,8 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
-hintButton.addEventListener("click", (e) => {
-    e.preventDefault();
+hintButton.addEventListener("click", (uHint) => {
+    uHint.preventDefault();
     const hint = "gainsight/px";
     alert(hint);
 })
