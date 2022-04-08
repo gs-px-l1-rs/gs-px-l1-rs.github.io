@@ -12,6 +12,7 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 const hintButton = document.getElementById("hint-button");
 
 loginButton.addEventListener("click", (uclick) => {
+    uclick.preventDefault();
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
     var userId = uEmail.substr(3,5);
@@ -129,10 +130,10 @@ loginButton.addEventListener("click", (uclick) => {
     else {
         loginErrorMsg.style.opacity = 1;
     }
-
 })
 
 hintButton.addEventListener("click", (uHint) => {
+    uHint.preventDefault();
     const hint = "pxuser<n>@example.com/px";
     alert(hint);
 })
