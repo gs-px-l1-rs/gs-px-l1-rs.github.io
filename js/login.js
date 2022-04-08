@@ -130,6 +130,7 @@ loginButton.addEventListener("click", (uclick) => {
     else {
         loginErrorMsg.style.opacity = 1;
     }
+    return;
 })
 
 hintButton.addEventListener("click", (uHint) => {
