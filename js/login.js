@@ -15,7 +15,7 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
-    var uId = email.substr(3,5);
+    var uId = uEmail.substr(3,5);
     const acctName = {
         acct1: "ABC Company",
         acct2: "DEF Inc.",
@@ -29,7 +29,7 @@ loginButton.addEventListener("click", (e) => {
         acct4: "4s6r8"
     }
 
-    if (uEmail === "rschlette@gainsight.com" && password === "px") {
+    if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
         //alert("You have successfully logged in.");
         //passing user and account objects:
         aptrinsic("identify",
@@ -43,6 +43,7 @@ loginButton.addEventListener("click", (e) => {
             "id":acctId.acct1, //Required
             "name":acctName.acct1
         });
+
         window.location.href="index.html";
     } else {
         loginErrorMsg.style.opacity = 1;
