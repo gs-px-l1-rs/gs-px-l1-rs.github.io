@@ -13,11 +13,36 @@ const hintButton = document.getElementById("hint-button");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+    const uEmail = loginForm.username.value;
+    const uPassword = loginForm.password.value;
+    var uId = email.substr(3,5);
+    const acctName = {
+        acct1: "ABC Company",
+        acct2: "DEF Inc.",
+        acct3: "GHI LLC",
+        acct4: "JKL Limited"
+    }
+    const acctId = {
+        acct1: "83nd7",
+        acct2: "b289d",
+        acct3: "8wbd6",
+        acct4: "4s6r8"
+    }
 
-    if (username === "gainsight" && password === "px") {
+    if (uEmail === "rschlette@gainsight.com" && password === "px") {
         //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": uId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct1, //Required
+            "name":acctName.acct1
+        });
         window.location.href="index.html";
     } else {
         loginErrorMsg.style.opacity = 1;
@@ -29,3 +54,20 @@ hintButton.addEventListener("click", (e) => {
     const hint = "gainsight/px";
     alert(hint);
 })
+
+
+
+
+/*  pre-PX login scheme
+    loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "gainsight" && password === "px") {
+        //alert("You have successfully logged in.");
+        window.location.href="index.html";
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+}) */
