@@ -93,7 +93,7 @@ loginButton.addEventListener("click", (uclick) => {
         });
         window.location.href="index.html";
     } 
-    else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
         //alert("You have successfully logged in.");
         //passing user and account objects:
         aptrinsic("identify",
@@ -110,6 +110,23 @@ loginButton.addEventListener("click", (uclick) => {
 
         window.location.href="index.html";
     } 
+    else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+        //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct4, //Required
+            "name":acctName.acct4
+        });
+
+        window.location.href="index.html";
+    } 
     else {
         loginErrorMsg.style.opacity = 1;
     }
@@ -117,7 +134,7 @@ loginButton.addEventListener("click", (uclick) => {
 
 hintButton.addEventListener("click", (uHint) => {
     uHint.preventDefault();
-    const hint = "gainsight/px";
+    const hint = "pxuser<n>@example.com/px";
     alert(hint);
 })
 
