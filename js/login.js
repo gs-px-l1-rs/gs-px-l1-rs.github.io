@@ -13,11 +13,9 @@ const hintButton = document.getElementById("hint-button");
 
 loginButton.addEventListener("click", (uclick) => {
     uclick.preventDefault();
-    alert("clicked");
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
     var userId = uEmail.substr(3,5);
-    alert(uEmail+" "+uPassword+" "+userId);
     const acctName = {
         acct1: "ABC Company",
         acct2: "DEF Inc.",
@@ -32,7 +30,7 @@ loginButton.addEventListener("click", (uclick) => {
     }
 
     if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
-        alert("You have successfully logged in.");
+        //alert("You have successfully logged in.");
         //passing user and account objects:
         aptrinsic("identify",
         {
@@ -45,9 +43,74 @@ loginButton.addEventListener("click", (uclick) => {
             "id":acctId.acct1, //Required
             "name":acctName.acct1
         });
+        window.location.href="index.html";
+    }
+    else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
+        //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct2, //Required
+            "name":acctName.acct2
+        });
+        window.location.href="index.html";
+    } 
+    else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
+        //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct3, //Required
+            "name":acctName.acct3
+        });
+        window.location.href="index.html";
+    } 
+    else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
+        //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct4, //Required
+            "name":acctName.acct4
+        });
+        window.location.href="index.html";
+    } 
+    else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+        //alert("You have successfully logged in.");
+        //passing user and account objects:
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct2, //Required
+            "name":acctName.acct2
+        });
 
         window.location.href="index.html";
-    } else {
+    } 
+    else {
         loginErrorMsg.style.opacity = 1;
     }
 })
