@@ -110,7 +110,7 @@ var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
         else {
             loginErrorMsg.style.opacity = 1;
         }
-        alert('Welcome, '+uEmail)
+        alert('Welcome, '+uEmail);
     }
 
 function logout() {
