@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script defer src="js/login.js"></script>
-    <script defer src="js/recipe.js"></script>
 </head>
 
 <body>
@@ -35,7 +33,7 @@
         <form id="login-form">
           <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"><br>
           <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"><br>
-          <input type="submit" value="Login" id="login-form-submit" onclick="login()"><input type="submit" value="Hint" id="hint-button">
+          <input type="submit" value="Login" id="login-form-submit" onclick="login()"><input type="submit" value="Hint" id="hint-button" onclick="showHint()">
 
         </form>
       

@@ -5,13 +5,7 @@ var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
 var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2");
 
-function logout() {
-    alert('Logging Out...');
-    document.cookie = 'apt.uid=; Domain=.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    document.cookie = 'apt.sid=; Domain=.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    window.location.href="login.html";
-  }
-
+//login / logout
   function login() {
         const uEmail = loginForm.username.value;
         const uPassword = loginForm.password.value;
@@ -118,3 +112,43 @@ function logout() {
         }
         alert('Welcome, '+uEmail)
     }
+
+function logout() {
+    alert('Logging Out...');
+    document.cookie = 'apt.uid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    window.location.href="login.html";
+  }
+
+  function showHint(){
+    const hint = "pxuser<n>@example.com, px";
+    alert(hint);
+  }
+
+  function calculateDonut() {
+    "use strict";
+    if (isNaN(document.bun.count.value)) {
+        var msg = "Please enter a valid number"; 
+        alert(msg);
+        return false;
+    }
+    else {
+        var flour = document.bun.count.value * 50;
+        var water = flour * 0.60 ;
+        var oil = flour * 0.14;
+        var sugar = flour * 0.15;
+        var salt = flour * 0.02;
+        var yeast = flour * 0.03;
+        
+        document.bun.base.value = round(flour)+ ' g';
+        document.bun.water.value = round(water)+ ' g';
+        document.bun.oil.value = round(oil)+ ' g';
+        document.bun.sugar.value = round(sugar)+ ' g';
+        document.bun.salt.value = round(salt)+ ' g';
+        document.bun.yeast.value = round(yeast)+ ' g';
+        }
+}
+
+function round(x) {
+    return Math.round(x*10)/10;
+  }
