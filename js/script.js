@@ -109,14 +109,12 @@ function login() {
         window.location.href="index.html";
     } 
     else {
-        loginErrorMsg.style.opacity = 1;
+        alert('Invalid username or password');
     }
     document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
-    alert('Welcome, '+uEmail);
-    }
+}
 
 function logout() {
-    alert('Logging Out...');
     document.cookie = 'apt.uid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
@@ -128,6 +126,7 @@ function logout() {
     alert(hint);
   }
 
+  //recipe
   function calculateDonut() {
     "use strict";
     if (isNaN(document.bun.count.value)) {
