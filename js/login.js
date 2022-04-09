@@ -4,7 +4,7 @@ const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 const hintButton = document.getElementById("hint-button");
 
-loginButton.addEventListener("click", (uclick) => {
+/* loginButton.addEventListener("click", (uclick) => {
     uclick.preventDefault();
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
@@ -110,7 +110,7 @@ loginButton.addEventListener("click", (uclick) => {
         loginErrorMsg.style.opacity = 1;
     }
     return;
-})
+}) */
 
 hintButton.addEventListener("click", (uHint) => {
     uHint.preventDefault();
