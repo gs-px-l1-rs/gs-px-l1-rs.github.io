@@ -1,10 +1,3 @@
-// Gainsight PX Tag
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-    (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2");
-
 // login elements and event listeners
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
@@ -15,7 +8,7 @@ loginButton.addEventListener("click", (uclick) => {
     uclick.preventDefault();
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
-    var userId = uEmail.substr(3,5);
+    const userId = uEmail.substr(3,5);
     const acctName = {
         acct1: "ABC Company",
         acct2: "DEF Inc.",
@@ -28,10 +21,7 @@ loginButton.addEventListener("click", (uclick) => {
         acct3: "8wbd6",
         acct4: "4s6r8"
     }
-
     if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -46,8 +36,6 @@ loginButton.addEventListener("click", (uclick) => {
         window.location.href="index.html";
     }
     else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -62,8 +50,6 @@ loginButton.addEventListener("click", (uclick) => {
         window.location.href="index.html";
     } 
     else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -78,8 +64,6 @@ loginButton.addEventListener("click", (uclick) => {
         window.location.href="index.html";
     } 
     else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -94,8 +78,6 @@ loginButton.addEventListener("click", (uclick) => {
         window.location.href="index.html";
     } 
     else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -111,8 +93,6 @@ loginButton.addEventListener("click", (uclick) => {
         window.location.href="index.html";
     } 
     else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
-        //alert("You have successfully logged in.");
-        //passing user and account objects:
         aptrinsic("identify",
         {
         //User Fields
@@ -124,7 +104,6 @@ loginButton.addEventListener("click", (uclick) => {
             "id":acctId.acct4, //Required
             "name":acctName.acct4
         });
-
         window.location.href="index.html";
     } 
     else {
@@ -138,20 +117,3 @@ hintButton.addEventListener("click", (uHint) => {
     const hint = "pxuser<n>@example.com/px";
     alert(hint);
 })
-
-
-
-
-/*  pre-PX login scheme
-    loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-
-    if (username === "gainsight" && password === "px") {
-        //alert("You have successfully logged in.");
-        window.location.href="index.html";
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
-}) */
