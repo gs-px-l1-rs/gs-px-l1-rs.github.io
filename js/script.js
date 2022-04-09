@@ -7,7 +7,7 @@ var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 
 function logout() {
     alert('Logging Out...');
-    document.cookie = 'apt.uid=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    document.cookie = 'apt.sid=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'apt.uid=; Domain=.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'apt.sid=; Domain=.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.location.href="login.html";
   }
