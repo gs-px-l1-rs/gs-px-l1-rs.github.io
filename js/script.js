@@ -28,7 +28,8 @@ function login() {
         {
         //User Fields
             "id": userId, // Required for logged in app users
-            "email": uEmail
+            "email": uEmail,
+            "PaidUser": true
         },
         {
         //Account Fields
