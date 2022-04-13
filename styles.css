@@ -319,6 +319,14 @@ footer.main a:hover{
    margin-left: 20px;
 }
 
+#article-list{
+   list-style: none;
+}
+
+.article-list-item.active-article{
+   font-weight: bold;
+}
+
 /* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
 
 .clearfix:after {
