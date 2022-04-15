@@ -149,6 +149,8 @@ function logout() {
         document.bun.sugar.value = round(sugar)+ ' g';
         document.bun.salt.value = round(salt)+ ' g';
         document.bun.yeast.value = round(yeast)+ ' g';
+
+        aptrinsic('track', 'Recipe Size', {"count": document.bun.count.value}); 
         }
 }
 
