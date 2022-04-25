@@ -112,7 +112,7 @@ function login() {
     else {
         alert('Invalid username or password');
     }
-    document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
+    //document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 }
 
 function logout() {
