@@ -10,7 +10,7 @@ function login() {
     const loginForm = document.getElementById("login-form");
     const uEmail = loginForm.username.value;
     const uPassword = loginForm.password.value;
-    //const userId = uEmail.substr(3,5);
+    const userId = uEmail.substr(3,5);
     const acctName = {
         acct1: "ABC Company",
         acct2: "DEF Inc.",
@@ -23,10 +23,6 @@ function login() {
         acct3: "8wbd6",
         acct4: "4s6r8"
     }
-    if(uEmail!=""){
-        if(uEmail=="rschlette@gainsight.com"||uEmail=="pxuser1@example.com"||uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com"||uEmail=="pxuser3@example"||uEmail=="pxuser5@example"){
-            const userId = uEmail.substr(3,5);
-    
     
     if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -41,7 +37,7 @@ function login() {
             "id":acctId.acct1, //Required
             "name":acctName.acct1
         });
-        //window.location.href="index.html";
+        window.location.href="index.html";
     }
     else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -55,7 +51,7 @@ function login() {
             "id":acctId.acct2, //Required
             "name":acctName.acct2
         });
-        //window.location.href="index.html";
+        window.location.href="index.html";
     } 
     else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -69,7 +65,7 @@ function login() {
             "id":acctId.acct3, //Required
             "name":acctName.acct3
         });
-        //window.location.href="index.html";
+        window.location.href="index.html";
     } 
     else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -83,7 +79,7 @@ function login() {
             "id":acctId.acct4, //Required
             "name":acctName.acct4
         });
-        //window.location.href="index.html";
+        window.location.href="index.html";
     } 
     else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -98,7 +94,7 @@ function login() {
             "name":acctName.acct2
         });
 
-        //window.location.href="index.html";
+        window.location.href="index.html";
     } 
     else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -112,17 +108,16 @@ function login() {
             "id":acctId.acct4, //Required
             "name":acctName.acct4
         });
-        //window.location.href="index.html";
+        window.location.href="index.html";
     } 
     else {
         alert('Invalid username or password');
     }
 
     window.location.href="index.html";
-}
     //document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 }
-}
+
 function logout() {
     /* document.cookie = 'apt.uid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
