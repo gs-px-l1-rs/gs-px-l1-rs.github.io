@@ -36,7 +36,7 @@ function login() {
             "id":acctId.acct1, //Required
             "name":acctName.acct1
         });
-        window.location.href="index.html";
+        //window.location.href="index.html";
     }
     else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -50,7 +50,7 @@ function login() {
             "id":acctId.acct2, //Required
             "name":acctName.acct2
         });
-        window.location.href="index.html";
+        //window.location.href="index.html";
     } 
     else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -64,7 +64,7 @@ function login() {
             "id":acctId.acct3, //Required
             "name":acctName.acct3
         });
-        window.location.href="index.html";
+        //window.location.href="index.html";
     } 
     else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -78,7 +78,7 @@ function login() {
             "id":acctId.acct4, //Required
             "name":acctName.acct4
         });
-        window.location.href="index.html";
+        //window.location.href="index.html";
     } 
     else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -93,7 +93,7 @@ function login() {
             "name":acctName.acct2
         });
 
-        window.location.href="index.html";
+        //window.location.href="index.html";
     } 
     else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
         aptrinsic("identify",
@@ -107,11 +107,13 @@ function login() {
             "id":acctId.acct4, //Required
             "name":acctName.acct4
         });
-        window.location.href="index.html";
+        //window.location.href="index.html";
     } 
     else {
         alert('Invalid username or password');
     }
+    window.location.href="index.html";
+    
     //document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 }
 
