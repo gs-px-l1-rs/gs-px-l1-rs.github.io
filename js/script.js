@@ -24,7 +24,7 @@ function login() {
         acct4: "4s6r8"
     }
     if(uEmail!=""){
-        if(uEmail=="rschlette@gainsight.com"||uEmail=="pxuser1@example.com"||uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com"||uEmail=="pxuser4@example"||uEmail=="pxuser5@example"){
+        if(uEmail=="rschlette@gainsight.com"||uEmail=="pxuser1@example.com"||uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com"||uEmail=="pxuser4@example.com"||uEmail=="pxuser5@example.com"){
             const userId = uEmail.substr(3,5);
     
     
