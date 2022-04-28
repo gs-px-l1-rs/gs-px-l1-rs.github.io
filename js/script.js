@@ -24,41 +24,43 @@ function login() {
         acct4: "4s6r8"
     }
     if(uEmail!=""){
-        if(uEmail=="rschlette@gainsight.com"||uEmail=="pxuser1@example.com"||uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com"||uEmail=="pxuser4@example.com"||uEmail=="pxuser5@example.com"){
+        if((uEmail=="rschlette@gainsight.com" || uEmail=="pxuser1@example.com" || uEmail=="pxuser2@example.com" || uEmail=="pxuser3@example.com" || uEmail=="pxuser4@example.com" || uEmail=="pxuser5@example.com")&& uPassword === "px" )
+        {
             const userId = uEmail.substr(3,5);
     
     
-    if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
+    if (uEmail === "rschlette@gainsight.com") {
         aptrinsic("identify",
         {
         //User Fields
             "id": userId, // Required for logged in app users
             "email": uEmail,
-            "lang": "fr-FR"
+            "PaidUser": true
         },
         {
         //Account Fields
             "id":acctId.acct1, //Required
             "name":acctName.acct1
-        });
+        },
+        );
         //window.location.href="index.html";
     }
-    else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser1@example.com") {
         aptrinsic("identify",
         {
         //User Fields
             "id": userId, // Required for logged in app users
-            "email": uEmail,
-            "lang": "hi-IN"
+            "email": uEmail
         },
         {
         //Account Fields
             "id":acctId.acct2, //Required
             "name":acctName.acct2
-        });
+        },
+        );
         //window.location.href="index.html";
     } 
-    else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser2@example.com") {
         aptrinsic("identify",
         {
         //User Fields
@@ -72,7 +74,7 @@ function login() {
         });
         //window.location.href="index.html";
     } 
-    else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser3@example.com") {
         aptrinsic("identify",
         {
         //User Fields
@@ -86,7 +88,7 @@ function login() {
         });
         //window.location.href="index.html";
     } 
-    else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser4@example.com") {
         aptrinsic("identify",
         {
         //User Fields
@@ -101,7 +103,7 @@ function login() {
 
         //window.location.href="index.html";
     } 
-    else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+    else if (uEmail === "pxuser5@example.com") {
         aptrinsic("identify",
         {
         //User Fields
@@ -119,7 +121,9 @@ function login() {
         alert('Invalid username or password');
     }
 
-    window.location.href="index.html";
+    window.location = "https://gs-px-l1-rs.github.io/index.html";
+    
+    return false;
 }
     //document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 }
@@ -130,7 +134,7 @@ function logout() {
     document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;'; */
     window.aptrinsic('reset');
     counter = 0;
-    window.location.href="login.html";
+    //window.location.href="login.html";
   }
 
   function showHint(){
