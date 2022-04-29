@@ -5,7 +5,6 @@ var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
 var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2");
 
-//login / logout
 function login() {
         const loginForm = document.getElementById("login-form");
         const uEmail = loginForm.username.value;
@@ -121,7 +120,7 @@ function logout() {
     document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.aptrinsic('reset');
     counter = 0;
-    setTimeout(() => { window.location.href="login.html"; }, 1000);
+    setTimeout(() => { window.location.href="login.html"; }, 500);
 }
 
   function showHint(){
