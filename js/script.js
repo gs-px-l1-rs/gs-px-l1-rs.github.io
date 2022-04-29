@@ -44,7 +44,7 @@ function login() {
 
             //alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
-            //window.location.href="index.html";
+            window.location.href="index.html";
       
             return false;
 
