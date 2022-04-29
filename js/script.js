@@ -7,134 +7,64 @@ var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 
 //login / logout
 function login() {
-    const loginForm = document.getElementById("login-form");
-    const uEmail = loginForm.username.value;
-    const uPassword = loginForm.password.value;
-    //const userId = uEmail.substr(3,5);
+    var loginForm = document.getElementById("login-form");
+    var uEmail = loginForm.username.value;
+    var uPassword = loginForm.password.value;
     const acctName = {
         acct1: "ABC Company",
         acct2: "DEF Inc.",
         acct3: "GHI LLC",
         acct4: "JKL Limited"
     }
-    const acctId = {
-        acct1: "83nd7",
-        acct2: "b289d",
-        acct3: "8wbd6",
-        acct4: "4s6r8"
-    }
+    
     if(uEmail!=""){
-        if((uEmail=="rschlette@gainsight.com" || uEmail=="pxuser1@example.com" || uEmail=="pxuser2@example.com" || uEmail=="pxuser3@example.com" || uEmail=="pxuser4@example.com" || uEmail=="pxuser5@example.com")&& uPassword === "px" )
+        if((uEmail=="rschlette@gainsight.com" || uEmail=="pxuser1@example.com" || uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com" || uEmail=="pxuser4@example.com" || uEmail=="pxuser5@example.com")&& uPassword=="px" )
         {
-            const userId = uEmail.substr(3,5);
-    
-    
-    if (uEmail === "rschlette@gainsight.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail,
-            "PaidUser": true
-        },
-        {
-        //Account Fields
-            "id":acctId.acct1, //Required
-            "name":acctName.acct1
-        },
-        );
-        //window.location.href="index.html";
-    }
-    else if (uEmail === "pxuser1@example.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail
-        },
-        {
-        //Account Fields
-            "id":acctId.acct2, //Required
-            "name":acctName.acct2
-        },
-        );
-        //window.location.href="index.html";
-    } 
-    else if (uEmail === "pxuser2@example.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail
-        },
-        {
-        //Account Fields
-            "id":acctId.acct3, //Required
-            "name":acctName.acct3
-        });
-        //window.location.href="index.html";
-    } 
-    else if (uEmail === "pxuser3@example.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail
-        },
-        {
-        //Account Fields
-            "id":acctId.acct4, //Required
-            "name":acctName.acct4
-        });
-        //window.location.href="index.html";
-    } 
-    else if (uEmail === "pxuser4@example.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail
-        },
-        {
-        //Account Fields
-            "id":acctId.acct2, //Required
-            "name":acctName.acct2
-        });
+            alert("valid user");
+            b = uEmail.substr(3, 5);
+            var id = b;
+//               var attrib_value= document.getElementById("myCheck").checked;
+            if (uEmail=="rschlette@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": uEmail,
+                            "gender": "male",
+                        },
 
-        //window.location.href="index.html";
-    } 
-    else if (uEmail === "pxuser5@example.com") {
-        aptrinsic("identify",
-        {
-        //User Fields
-            "id": userId, // Required for logged in app users
-            "email": uEmail
-        },
-        {
-        //Account Fields
-            "id":acctId.acct4, //Required
-            "name":acctName.acct4
-        });
-        //window.location.href="index.html";
-    } 
-    else {
-        alert('Invalid username or password');
-    }
+                        {
+                            //Account Fields
+                            "id":acctName.acct1, //Required
+                            "name":acctName.acct1,
+                        },
+                        
+                        );
+                }  else {
+                    alert("not a valid user");
+                }
 
-    window.location = "https://gs-px-l1-rs.github.io/index.html";
-    
-    return false;
+            alert("Logged in user id :" + b);
+            //window.open("/HTML/home.html");
+            window.location.href="index.html";
+      
+            return false;
+
+        }
+        else
+        {
+            alert("login failed");
+        }
+    }
+        else{
+            alert("enter valid creds");
+        }
+
+
 }
-    //document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
-}
-}
+
 function logout() {
-    /* document.cookie = 'apt.uid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;'; */
     window.aptrinsic('reset');
     counter = 0;
-    //window.location.href="login.html";
   }
 
   function showHint(){
