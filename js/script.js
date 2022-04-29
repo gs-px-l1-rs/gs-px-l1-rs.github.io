@@ -42,9 +42,9 @@ function login() {
                     alert("not a valid user");
                 }
 
-            alert("Logged in user id :" + b);
+            //alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
-            window.location.href="index.html";
+            //window.location.href="index.html";
       
             return false;
 
