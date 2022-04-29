@@ -20,7 +20,6 @@ function login() {
     if(uEmail!=""){
         if((uEmail=="rschlette@gainsight.com" || uEmail=="pxuser1@example.com" || uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com" || uEmail=="pxuser4@example.com" || uEmail=="pxuser5@example.com")&& uPassword=="px" )
         {
-            alert("valid user");
             b = uEmail.substr(3, 5);
             var id = b;
 //               var attrib_value= document.getElementById("myCheck").checked;
@@ -42,8 +41,6 @@ function login() {
                 }  else {
                     alert("not a valid user");
                 }
-
-            alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
             window.location.href="index.html";
       
