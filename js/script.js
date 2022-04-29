@@ -41,6 +41,8 @@ function login() {
                 }  else {
                     alert("not a valid user");
                 }
+
+            alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
             window.location.href="index.html";
       
