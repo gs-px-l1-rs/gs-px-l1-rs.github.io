@@ -7,64 +7,122 @@ var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 
 //login / logout
 function login() {
-    var loginForm = document.getElementById("login-form");
-    var uEmail = loginForm.username.value;
-    var uPassword = loginForm.password.value;
-    const acctName = {
-        acct1: "ABC Company",
-        acct2: "DEF Inc.",
-        acct3: "GHI LLC",
-        acct4: "JKL Limited"
-    }
-    
-    if(uEmail!=""){
-        if((uEmail=="rschlette@gainsight.com" || uEmail=="pxuser1@example.com" || uEmail=="pxuser2@example.com"||uEmail=="pxuser3@example.com" || uEmail=="pxuser4@example.com" || uEmail=="pxuser5@example.com")&& uPassword=="px" )
-        {
-            b = uEmail.substr(3, 5);
-            var id = b;
-//               var attrib_value= document.getElementById("myCheck").checked;
-            if (uEmail=="rschlette@gainsight.com") {
-                    aptrinsic('identify', {
-                            //User Fields
-                            "id": id, // Required for logged in app users
-                            "email": uEmail,
-                            "gender": "male",
-                        },
-
-                        {
-                            //Account Fields
-                            "id":acctName.acct1, //Required
-                            "name":acctName.acct1,
-                        },
-                        
-                        );
-                }  else {
-                    alert("not a valid user");
-                }
-
-            //alert("Logged in user id :" + b);
-            //window.open("/HTML/home.html");
-            window.location.href="index.html";
-      
-            return false;
-
+        const loginForm = document.getElementById("login-form");
+        const uEmail = loginForm.username.value;
+        const uPassword = loginForm.password.value;
+        const userId = uEmail.substr(3,5);
+        const acctName = {
+            acct1: "ABC Company",
+            acct2: "DEF Inc.",
+            acct3: "GHI LLC",
+            acct4: "JKL Limited"
         }
-        else
-        {
-            alert("login failed");
+        const acctId = {
+            acct1: "83nd7",
+            acct2: "b289d",
+            acct3: "8wbd6",
+            acct4: "4s6r8"
         }
-    }
-        else{
-            alert("enter valid creds");
+        
+        if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail,
+                "lang": "fr-FR"
+            },
+            {
+            //Account Fields
+                "id":acctId.acct1, //Required
+                "name":acctName.acct1
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
-
+        else if (uEmail === "pxuser1@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail,
+                "lang": "hi-IN"
+            },
+            {
+            //Account Fields
+                "id":acctId.acct2, //Required
+                "name":acctName.acct2
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        } 
+        else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail
+            },
+            {
+            //Account Fields
+                "id":acctId.acct3, //Required
+                "name":acctName.acct3
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        } 
+        else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail
+            },
+            {
+            //Account Fields
+                "id":acctId.acct4, //Required
+                "name":acctName.acct4
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        } 
+        else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail
+            },
+            {
+            //Account Fields
+                "id":acctId.acct2, //Required
+                "name":acctName.acct2
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        } 
+        else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail
+            },
+            {
+            //Account Fields
+                "id":acctId.acct4, //Required
+                "name":acctName.acct4
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        } 
+        else {
+            alert('Invalid username or password');
+        }
+        document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 
 }
 
 function logout() {
+    document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.aptrinsic('reset');
     counter = 0;
-  }
+    setTimeout(() => { window.location.href="login.html"; }, 1000);
+}
 
   function showHint(){
     const hint = "pxuser<n>@example.com, px";
