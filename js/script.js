@@ -114,7 +114,8 @@ function login() {
             {
             //User Fields
                 "id": userId, // Required for logged in app users
-                "email": uEmail
+                "email": uEmail,
+                "lang": "de-DE"
             },
             {
             //Account Fields
