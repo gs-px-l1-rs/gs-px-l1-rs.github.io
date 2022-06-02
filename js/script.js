@@ -119,7 +119,8 @@ function login() {
             },
             {
             //Account Fields
-                "id":"noName" //Required
+                "id":"noName", //Required
+                "name":"Revived Co"
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
