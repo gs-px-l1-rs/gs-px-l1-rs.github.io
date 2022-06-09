@@ -136,6 +136,19 @@ function login() {
                 "id":"" //Required
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
+        }
+        else if (uEmail === "test@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": "newuser1", // Required for logged in app users
+                "email": uEmail
+            },
+            {
+            //Account Fields
+                "id":"" //Required
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
         else {
             alert('Invalid username or password');
