@@ -169,7 +169,7 @@ function logout() {
     alert(hint);
   }
 
-  //recipe
+  //recipe thing
   function calculateDonut() {
     "use strict";
     if (isNaN(document.bun.count.value)) {
