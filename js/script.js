@@ -192,7 +192,7 @@ function logout() {
         document.bun.salt.value = round(salt)+ ' g';
         document.bun.yeast.value = round(yeast)+ ' g';
 
-        aptrinsic('track', 'Missing Value', {"value": "this"});
+        aptrinsic('track', 'Missing Value', {"value": "that"});
 
         aptrinsic('track', 'Recipe Size', {"count": parseInt(document.bun.count.value)});
         }
