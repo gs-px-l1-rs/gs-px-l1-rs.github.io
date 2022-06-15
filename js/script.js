@@ -194,7 +194,7 @@ function logout() {
 
         aptrinsic('track', 'Test Event', {"value": 4407});
 
-        aptrinsic('track', 'Recipe Size', {"count": parseInt(document.bun.count.value)});
+        aptrinsic('track', 'Recipe Size', {"count": parseInt(document.bun.count.value), "rname":234});
         }
 }
 
