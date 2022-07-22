@@ -156,7 +156,8 @@ function login() {
             //User Fields
                 "id": "noAcctUser", // Required for logged in app users
                 "email": uEmail,
-                "signUpDate" :"1656894286"
+                "signUpDate" :"1656894286",
+                "firstVisitDate":"1656894286"
             },
             {
             //Account Fields
