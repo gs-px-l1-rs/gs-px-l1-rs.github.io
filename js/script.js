@@ -150,16 +150,17 @@ function login() {
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
-        else if (uEmail === "noaccount@example.com" && uPassword === "px") {
+        else if (uEmail === "signupdate@example.com" && uPassword === "px") {
             aptrinsic("identify",
             {
             //User Fields
                 "id": "noAcctUser", // Required for logged in app users
-                "email": uEmail
+                "email": uEmail,
+                "signupdate" :1522697426479
             },
             {
             //Account Fields
-                "id":"" //Required
+                "id":"78sd34cv" //Required
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
