@@ -1,10 +1,7 @@
 // Gainsight PX Tag
-var config = {    
-
+var config = {  
     // query parameter filters example    
-    
     namedParamFilter : ["sUrvey"],    
-    
     nameParamFilterType : "mask"};
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
