@@ -1,9 +1,16 @@
 // Gainsight PX Tag
+var config = {    
+
+    // query parameter filters example    
+    
+    namedParamFilter : ["sUrvey"],    
+    
+    nameParamFilterType : "mask"};
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
 var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
 var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2");
+})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2",config);
 
 function login() {
         const loginForm = document.getElementById("login-form");
@@ -173,6 +180,8 @@ function login() {
 }
 
 function logout() {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
     document.cookie = 'username=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.aptrinsic('reset');
     counter = 0;
@@ -207,8 +216,6 @@ function logout() {
         document.bun.salt.value = round(salt)+ ' g';
         document.bun.yeast.value = round(yeast)+ ' g';
 
-        aptrinsic('track', 'Missing Value', {"value": "that"});
-
         aptrinsic('track', 'Recipe Size', {"count": parseInt(document.bun.count.value)});
         }
 }
@@ -216,3 +223,6 @@ function logout() {
 function round(x) {
     return Math.round(x*10)/10;
   }
+
+
+      //aptrinsic('track', '', {});
