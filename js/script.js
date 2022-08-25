@@ -154,18 +154,18 @@ function login() {
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
-        else if (uEmail === "signupdate@example.com" && uPassword === "px") {
+        else if (uEmail === "blankfirstvisit@example.com" && uPassword === "px") {
             aptrinsic("identify",
             {
             //User Fields
-                "id": "noAcctUser", // Required for logged in app users
+                "id": "firstvisit", // Required for logged in app users
                 "email": uEmail,
                 // "signUpDate" :"1656894286",
-                // "firstVisitDate":"1656894286"
+                // "firstVisitDate":""
             },
             {
             //Account Fields
-                "id":"78sd34cv" //Required
+                "id":"gspx123" //Required
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
