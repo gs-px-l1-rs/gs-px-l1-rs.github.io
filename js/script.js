@@ -154,13 +154,13 @@ function login() {
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
-        else if (uEmail === "blankfirstvisit@example.com" && uPassword === "px") {
+        else if (uEmail === "blankfirstvisit2@example.com" && uPassword === "px") {
             aptrinsic("identify",
             {
             //User Fields
-                "id": "firstvisit", // Required for logged in app users
+                "id": "firstvisit2", // Required for logged in app users
                 "email": uEmail,
-                // "signUpDate" :"1656894286",
+                // "signUpDate" :"",
                 // "firstVisitDate":""
             },
             {
