@@ -221,5 +221,7 @@ function round(x) {
     return Math.round(x*10)/10;
   }
 
-
+function killSession(){
+    document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
       //aptrinsic('track', '', {});
