@@ -226,9 +226,6 @@ function killSession(){
 }
       //aptrinsic('track', '', {});
 
-function dialogScript() {
-        alert("script executed");
-      }
 
 function createCta(){
     //https://developer.mozilla.org/en-US/docs/Web/API/Request
