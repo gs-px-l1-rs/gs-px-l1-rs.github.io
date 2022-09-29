@@ -33,7 +33,8 @@ function login() {
             //User Fields
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
-                "lang": "fr-FR"
+                "lang": "fr-FR",
+                "continent":"test_val"
             },
             {
             //Account Fields
