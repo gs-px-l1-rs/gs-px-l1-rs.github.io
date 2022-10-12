@@ -164,6 +164,7 @@ function login() {
                 "name":pxuser8.acctname            
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
+            document.cookie = 'account='+pxuser8.acctname+';Domain=.gs-px-l1-rs.github.io; path=/';
         }
         else if (uEmail === "test@example.com" && uPassword === "px") {
             aptrinsic("identify",
