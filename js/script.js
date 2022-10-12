@@ -26,6 +26,12 @@ function login() {
             acct3: "8wbd6",
             acct4: "4s6r8"
         }
+
+        const pxuser8 = {
+            lang: "fr-FR",
+            acctid: "3241-5674-8243",
+            acctname: "Software Maker Inc."
+        }
         
         if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
             aptrinsic("identify",
@@ -142,6 +148,21 @@ function login() {
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
+        else if (uEmail === "pxuser8@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail,
+                "lang": pxuser8.lang,
+            },
+            {
+            //Account Fields
+                "id":pxuser8.acctid, //Require
+                "name":pxuser8.acctname            
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        }
         else if (uEmail === "test@example.com" && uPassword === "px") {
             aptrinsic("identify",
             {
@@ -228,7 +249,7 @@ function killSession(){
       //aptrinsic('track', '', {});
 
 
-function createCta(){
+/* function createCta(){
     //https://developer.mozilla.org/en-US/docs/Web/API/Request
     //https://support.gainsight.com/Gainsight_NXT/API_and_Developer_Docs/Cockpit_API/Call_To_Action_(CTA)_API_Documentation#Sample_Request
     //https://community.gainsight.com/gainsight-px-22/tip-of-the-week-creating-px-custom-events-from-within-a-px-engagement-38499
@@ -249,5 +270,5 @@ function createCta(){
         .catch(error => this.setState({
             isLoading: false,
             message: 'Something bad happened ' + error
-        })); */
-}
+        }));
+} */
