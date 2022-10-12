@@ -166,40 +166,17 @@ function login() {
             setTimeout(() => { window.location.href="index.html"; }, 1000);
             document.cookie = 'account='+pxuser8.acctname+';Domain=.gs-px-l1-rs.github.io; path=/';
         }
-        else if (uEmail === "test@example.com" && uPassword === "px") {
-            aptrinsic("identify",
-            {
-            //User Fields
-                "id": "newuser1", // Required for logged in app users
-                "email": uEmail
-            },
-            {
-            //Account Fields
-                "id":"" //Required
-            });
-            setTimeout(() => { window.location.href="index.html"; }, 1000);
-        } 
-        else if (uEmail === "blankfirstvisit2@example.com" && uPassword === "px") {
-            aptrinsic("identify",
-            {
-            //User Fields
-                "id": "firstvisit2", // Required for logged in app users
-                "email": uEmail,
-                // "signUpDate" :"",
-                // "firstVisitDate":""
-            },
-            {
-            //Account Fields
-                "id":"gspx123" //Required
-            });
-            setTimeout(() => { window.location.href="index.html"; }, 1000);
-        }
         else {
             alert('Invalid username or password');
         }
         document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
 
 }
+
+function showHint(){
+    const hint = "pxuser<n>@example.com, px";
+    alert(hint);
+  }
 
 function logout() {
     var path = window.location.pathname;
@@ -211,12 +188,11 @@ function logout() {
     setTimeout(() => { window.location.href="login.html"; }, 500);
 }
 
-  function showHint(){
-    const hint = "pxuser<n>@example.com, px";
-    alert(hint);
-  }
+function killSession(){
+    document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'account=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
 
-  //recipe thing
   function calculateDonut() {
     "use strict";
     if (isNaN(document.bun.count.value)) {
@@ -246,33 +222,3 @@ function logout() {
 function round(x) {
     return Math.round(x*10)/10;
   }
-
-function killSession(){
-    document.cookie = 'apt.sid=; Domain=.gs-px-l1-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-      //aptrinsic('track', '', {});
-
-
-/* function createCta(){
-    //https://developer.mozilla.org/en-US/docs/Web/API/Request
-    //https://support.gainsight.com/Gainsight_NXT/API_and_Developer_Docs/Cockpit_API/Call_To_Action_(CTA)_API_Documentation#Sample_Request
-    //https://community.gainsight.com/gainsight-px-22/tip-of-the-week-creating-px-custom-events-from-within-a-px-engagement-38499
-/*  var url = "https://yourUrl";
-    var bearer = 'Bearer ' + bearer_token;
-    fetch(url, {
-            method: 'GET',
-            withCredentials: true,
-            credentials: 'include',
-            headers: {
-                'Authorization': bearer,
-                'X-FP-API-KEY': 'iphone', //it can be iPhone or your any other attribute
-                'Content-Type': 'application/json'
-            }
-        }).then(responseJson => {
-            var items = JSON.parse(responseJson._bodyInit);
-        })
-        .catch(error => this.setState({
-            isLoading: false,
-            message: 'Something bad happened ' + error
-        }));
-} */
