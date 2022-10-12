@@ -9,6 +9,12 @@ var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
 var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-C80IAPOQUD9F-2",config);
 
+const pxuser8 = {
+    lang: "fr-FR",
+    acctid: "3241-5674-8243",
+    acctname: "Software Maker Inc."
+}
+
 function login() {
         const loginForm = document.getElementById("login-form");
         const uEmail = loginForm.username.value;
@@ -27,11 +33,7 @@ function login() {
             acct4: "4s6r8"
         }
 
-        const pxuser8 = {
-            lang: "fr-FR",
-            acctid: "3241-5674-8243",
-            acctname: "Software Maker Inc."
-        }
+
         
         if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
             aptrinsic("identify",
