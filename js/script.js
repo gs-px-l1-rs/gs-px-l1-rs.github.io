@@ -151,14 +151,13 @@ function login() {
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         }
-        else if (uEmail === "pxuser8@example.com" && uPassword === "px") {
+        else if (uEmail === "pxuser9@example.com" && uPassword === "px") {
             aptrinsic("identify",
             {
             //User Fields
-                "id": userId, // Required for logged in app users
-                "email": uEmail,
-                "lang": pxuser8.lang,
-            },
+                "id": "createdByApi_nov7", // Required for logged in app users
+                "email": uEmail
+                        },
             {
             //Account Fields
                 "id":pxuser8.acctid, //Require
