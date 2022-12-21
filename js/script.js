@@ -80,7 +80,8 @@ function login() {
             //User Fields
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
-                "signUpDate":1662144328
+                "signUpDate":1662144328,
+                "ExpireDate":1671573879
             },
             {
             //Account Fields
