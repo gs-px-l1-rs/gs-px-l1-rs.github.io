@@ -173,6 +173,21 @@ function login() {
             setTimeout(() => { window.location.href="index.html"; }, 1000);
             document.cookie = 'account='+pxuser8.acctname+';Domain=.gs-px-l1-rs.github.io; path=/';
         }
+        else if (uEmail === "bmc@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": "BMC User", // Required for logged in app users
+                "email": uEmail
+                        },
+            {
+            //Account Fields
+                "id":"bmc software, inc.", //Require
+                "name":"BMC"            
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+            document.cookie = 'account='+pxuser8.acctname+';Domain=.gs-px-l1-rs.github.io; path=/';
+        }
         else {
             alert('Invalid username or password');
         }
@@ -229,3 +244,8 @@ function killSession(){
 function round(x) {
     return Math.round(x*10)/10;
   }
+
+
+
+
+  aptrinsic('track', 'Name of the Event', {"name of property": "property value"});
