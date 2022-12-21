@@ -244,8 +244,3 @@ function killSession(){
 function round(x) {
     return Math.round(x*10)/10;
   }
-
-
-
-
-  aptrinsic('track', 'Name of the Event', {"name of property": "property value"});
