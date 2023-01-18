@@ -113,8 +113,10 @@ function login() {
             },
             {
             //Account Fields
-                "id":acctId.acct2, //Required
-                "name":acctName.acct2
+                "id":"changedAcctID",
+                "name":"changedAcctName"
+                /* "id":acctId.acct2, //Required
+                "name":acctName.acct2 */
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
