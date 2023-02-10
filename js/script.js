@@ -198,7 +198,7 @@ function login() {
             //User Fields
                 "id": "dateAsString", // Required for logged in app users
                 "email": uEmail,
-                "ExpireDate":
+                "ExpireDate":""
                         },
             {
             //Account Fields
