@@ -192,6 +192,21 @@ function login() {
             setTimeout(() => { window.location.href="index.html"; }, 1000);
             document.cookie = 'account='+pxuser8.acctname+';Domain=.gs-px-l1-rs.github.io; path=/';
         }
+        else if (uEmail === "date@example.com" && uPassword === "px") {
+            aptrinsic("identify",
+            {
+            //User Fields
+                "id": "dateAsString", // Required for logged in app users
+                "email": uEmail,
+                "ExpireDate":"01/06/2030"
+                        },
+            {
+            //Account Fields
+                "id":"kib6ceriuwe", //Require
+                "name":"dateAsString, inc."            
+            });
+            setTimeout(() => { window.location.href="index.html"; }, 1000);
+        }
         else {
             alert('Invalid username or password');
         }
