@@ -49,7 +49,11 @@ function login() {
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
                 "lang": "fr-FR",
-                "continent":"test_val"
+                "continent":"test_val",
+                "products": {
+                    "productName1": "Product Name",
+                    "productKey1": "123-abc-456"
+                  }
             },
             {
             //Account Fields
