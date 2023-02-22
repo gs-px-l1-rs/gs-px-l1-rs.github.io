@@ -49,11 +49,7 @@ function login() {
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
                 "lang": "fr-FR",
-                "continent":"test_val",
-                "products": {
-                    "productName1": "Product Name",
-                    "productKey1": "123-abc-456"
-                  }
+                "continent":"test_val"
             },
             {
             //Account Fields
@@ -243,6 +239,7 @@ function killSession(){
     if (isNaN(document.bun.count.value)) {
         var msg = "Please enter a valid number"; 
         alert(msg);
+        aptrinsic('track', 'Error', {"type": "NaN"});
         return false;
     }
     else {
@@ -262,7 +259,7 @@ function killSession(){
 
         aptrinsic('track', 'Recipe Size', {"count": parseInt(document.bun.count.value)});
         }
-}
+    }
 
 function round(x) {
     return Math.round(x*10)/10;
