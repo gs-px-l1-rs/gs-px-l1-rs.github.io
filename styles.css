@@ -18,7 +18,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 body {
-   background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+   background: #f2f3ee url('images/bg-tile.gif') top left repeat;
    color: #4b2707;
    font-size: 14px;
    font-family: 'Open Sans', sans-serif;
@@ -45,7 +45,7 @@ h1,h2{
 h1{
    text-align: center;
    padding: 0 0 20px;
-   background: url('../images/header-divider.png') bottom center no-repeat;
+   background: url('images/header-divider.png') bottom center no-repeat;
 }
 h1 em{
    font-style: normal;
@@ -86,7 +86,7 @@ hr {
    height: 33px;
    width: 330px;
    margin: 30px auto;
-   background: url('../images/divider.png') center center no-repeat;
+   background: url('images/divider.png') center center no-repeat;
 }
 
 /* Header */
@@ -117,26 +117,26 @@ header nav ul li a{
 header nav ul li a:hover{
    color: #4b2707;
    padding-top: 20px;
-   background: url('../images/tiny-donut.png') top center no-repeat;
+   background: url('images/tiny-donut.png') top center no-repeat;
 }
 
 header nav ul li#logo a{
    display: block;
    width: 292px;
    height: 141px;
-   background: url('../images/logo.png') center center no-repeat;
+   background: url('images/logo.png') center center no-repeat;
    text-indent: -99999px;
 
 }
 
 header nav ul li#logo a:hover{
    padding: 0;
-   background: url('../images/logo-hover.png') center center no-repeat;
+   background: url('images/logo-hover.png') center center no-repeat;
 }
 
 /* Hero */
 #hero{
-   background: #e8c04f url('../images/bg-tile-yellow.gif') top left repeat;
+   background: #e8c04f url('images/bg-tile-yellow.gif') top left repeat;
 }
 
 #hero .container{
@@ -159,7 +159,7 @@ header nav ul li#logo a:hover{
 #hero .large-ribbon{
    height: 190px;
    width: 150px;
-   background: url('../images/fresh-whole-ingredients.png') top left no-repeat;
+   background: url('images/fresh-whole-ingredients.png') top left no-repeat;
    text-indent: -99999px;
    position: absolute;
    top:-23px;
@@ -175,7 +175,7 @@ header nav ul li#logo a:hover{
 }
 
 #best-donut{
-   background: url('../images/award.png') left center no-repeat;
+   background: url('images/award.png') left center no-repeat;
    padding: 30px 0 30px 130px;
    float:left;
    width: 240px;
@@ -198,11 +198,11 @@ header nav ul li#logo a:hover{
 }
 
 #news-event article.news {
-	background: url('../images/icon-news.png') top left no-repeat;
+	background: url('images/icon-news.png') top left no-repeat;
 }
 
 #news-event article.event {
-	background: url('../images/icon-calendar.png') top left no-repeat;
+	background: url('images/icon-calendar.png') top left no-repeat;
 }
 
 #news-event header time {
@@ -230,7 +230,7 @@ header nav ul li#logo a:hover{
 /* Footer */
 
 footer.main{
-   background: #4b2707 url('../images/bg-tile-brown.gif') top left repeat;
+   background: #4b2707 url('images/bg-tile-brown.gif') top left repeat;
    color: #f2f3ee;
    padding: 30px 0;
 }
@@ -245,10 +245,10 @@ footer.main a:hover{
    padding: 10px 0 10px 50px;
 }
 #uncopyright{
-   background: url('../images/icon-recycle.png') center left no-repeat;
+   background: url('images/icon-recycle.png') center left no-repeat;
 }
 #credits{
-   background: url('../images/icon-apple.png') center left no-repeat;
+   background: url('images/icon-apple.png') center left no-repeat;
    float: right;
    margin-top: 5px;
 }
@@ -315,7 +315,7 @@ footer.main a:hover{
  input.nobord {
    border: none transparent;
    outline: none;
-   background: #f2f3ee url(../images/bg-tile.gif) top left repeat;
+   background: #f2f3ee url(images/bg-tile.gif) top left repeat;
    margin-left: 20px;
 }
 
