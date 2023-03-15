@@ -64,8 +64,8 @@ function login() {
             //User Fields
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
-                "lang": "hi-IN"
-                // "ExpireDate":1734299743
+                "lang": "hi-IN",
+                "ExpireDate":1734299743
             },
             {
             //Account Fields
