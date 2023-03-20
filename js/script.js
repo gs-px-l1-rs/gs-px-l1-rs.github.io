@@ -65,8 +65,8 @@ function login() {
                 "id": userId, // Required for logged in app users
                 "email": uEmail,
                 "lang": "hi-IN",
-                "firstName":"First",
-                "lastName":"Last",
+                "firstName":"New First",
+                "lastName":"New Last",
                 "ExpireDate":1734299743
             },
             {
