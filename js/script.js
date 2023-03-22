@@ -41,7 +41,7 @@ function login() {
             acct3: "8wbd6",
             acct4: "4s6r8"
         }
- 
+        aptrinsic('set', 'globalContext', {"subuser":"Gainsight"});
         if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
             aptrinsic("identify",
             {
@@ -73,10 +73,6 @@ function login() {
             //Account Fields
                 "id":acctId.acct2, //Required
                 "name":acctName.acct2
-            },
-            //Global Context 
-            {
-                "sub-account":"Gainsight"
             });
             setTimeout(() => { window.location.href="index.html"; }, 1000);
         } 
