@@ -212,7 +212,6 @@ function login() {
             alert('Invalid username or password');
         }
         document.cookie = 'username='+uEmail+';Domain=.gs-px-l1-rs.github.io; path=/';
-        aptrinsic('set', 'globalContext', {"subuser":"Gainsight"});
 
 }
 
