@@ -228,7 +228,6 @@ function logout() {
     window.aptrinsic('reset');
     counter = 0;
     setTimeout(() => { window.location.href="login.html"; }, 500);
-    aptrinsic('remove', 'globalContext', ["subuser"]);
 }
 
 function killSession(){
