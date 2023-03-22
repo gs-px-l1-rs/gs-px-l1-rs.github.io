@@ -74,7 +74,7 @@ function login() {
                 "id":acctId.acct2, //Required
                 "name":acctName.acct2
             },
-            //Global Context
+            //Global Context 
             {
                 "sub-account":"Gainsight"
             });
