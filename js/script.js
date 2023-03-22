@@ -41,7 +41,7 @@ function login() {
             acct3: "8wbd6",
             acct4: "4s6r8"
         }
-        aptrinsic('remove', 'globalContext', ["subuser"]);
+        //aptrinsic('remove', 'globalContext', ["subuser"]);
         if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
             aptrinsic("identify",
             {
