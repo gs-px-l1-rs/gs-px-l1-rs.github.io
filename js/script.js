@@ -41,7 +41,6 @@ function login() {
             acct3: "8wbd6",
             acct4: "4s6r8"
         }
-        aptrinsic('set', 'globalContext', {"subuser":"Gainsight"});
         if (uEmail === "rschlette@gainsight.com" && uPassword === "px") {
             aptrinsic("identify",
             {
