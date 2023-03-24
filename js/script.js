@@ -242,7 +242,7 @@ function killSession(){
     if (isNaN(document.bun.count.value)) {
         var msg = "Please enter a valid number"; 
         alert(msg);
-        aptrinsic('track', 'Error', {"type": "NaN"});
+        aptrinsic('track', 'Error', {"type": "NaN", "selectedTags":"["AllThirdParties"]"});
         return false;
     }
     else {
