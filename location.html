@@ -141,7 +141,19 @@
                                   style="display: none;"
                               />
                           </div>
-                          <div class="GenericCustomParameterPageElementHelp"><div>(Default: None)</div></div>
+                          <div><li class="panel-list-item panel-text">
+                            <div>
+                                <input type="checkbox" checked.bind="catalog.is_checked" change.delegate="loadPromptVariables(catalog)" class="au-target" au-target-id="1182">
+                                <span click.delegate="selectCatalog(catalog)" class="au-target" au-target-id="1183">Div only rule test</span>
+                                <span class="pull-right au-target" show.bind="catalog.is_new_content" au-target-id="1185"><i class="fa fa-asterisk" title="This catalog has been updated since last flowchart run"></i></span>
+                            </div>
+                            <div class="text-center au-target aurelia-hide" show.bind="catalog.content_id == $parent.loadingContentId" au-target-id="1186">
+                                <span class="loading">Loading...</span>
+                            </div>
+                            <div class="col-xs-12 form-horizontal text-left au-target aurelia-hide" show.bind="catalog.is_checked" style="border: solid 1px #e8e8e8; padding-top: 15px; margin-top: 8px;" au-target-id="1187">
+                                <!--anchor-->
+                            </div>
+                        </li></div>
                       </div>
                   </div>
               </div>
