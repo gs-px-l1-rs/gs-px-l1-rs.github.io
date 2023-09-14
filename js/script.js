@@ -282,3 +282,17 @@ function round(x) {
                 "name":"Alt Account"
             });
  }
+
+ function reReIdentify(){
+    window.aptrinsic('reset');
+    aptrinsic("identify",
+            {
+            //User Fields
+                "id":"hlett" // Required for logged in app users
+            },
+            {
+            //Account Fields
+                "id":"83nd7", //Required
+                "name":"ABC Company"
+            });
+ }
