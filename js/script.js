@@ -270,11 +270,11 @@ function round(x) {
   }
 
  function reIdentify(){
+    console.log(userId);
     aptrinsic("identify",
             {
             //User Fields
-                "id": userId, // Required for logged in app users
-                "email": uEmail,
+                "id": hlett, // Required for logged in app users
             },
             {
             //Account Fields
