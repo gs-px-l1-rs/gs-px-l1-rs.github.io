@@ -273,7 +273,7 @@ function round(x) {
     aptrinsic("identify",
             {
             //User Fields
-                "id": hlett, // Required for logged in app users
+                "id":"hlett" // Required for logged in app users
             },
             {
             //Account Fields
