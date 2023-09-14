@@ -270,7 +270,6 @@ function round(x) {
   }
 
  function reIdentify(){
-    console.log(userId);
     aptrinsic("identify",
             {
             //User Fields
