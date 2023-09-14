@@ -268,3 +268,17 @@ function killSession(){
 function round(x) {
     return Math.round(x*10)/10;
   }
+
+ function reIdentify(){
+    aptrinsic("identify",
+            {
+            //User Fields
+                "id": userId, // Required for logged in app users
+                "email": uEmail,
+            },
+            {
+            //Account Fields
+                "id":"alt_acct_id01", //Required
+                "name":"Alt Account"
+            });
+ }
