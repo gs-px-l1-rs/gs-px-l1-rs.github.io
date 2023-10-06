@@ -284,7 +284,7 @@ function round(x) {
  }
 
  function reReIdentify(){
-    window.aptrinsic('reset');
+    // window.aptrinsic('reset');
     aptrinsic("identify",
             {
             //User Fields
