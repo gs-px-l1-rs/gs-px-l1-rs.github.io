@@ -296,3 +296,9 @@ function round(x) {
                 "name":"ABC Company"
             });
  }
+
+ function createDoc(){
+    option=document.optionform.option.value;
+    console.log(option);
+    aptrinsic('track', 'Create Word Doc', {"file_type": option});
+ }
