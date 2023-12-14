@@ -299,6 +299,12 @@ function round(x) {
 
  function createDoc(){
     option=document.optionform.option.value;
-    console.log(option);
     aptrinsic('track', 'Create Word Doc', {"file_type": option});
  }
+
+ function sendFeedback(){
+    console.log("feedback clicked");
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('feedback', 'true');
+    window.location.search = urlParams;
+}

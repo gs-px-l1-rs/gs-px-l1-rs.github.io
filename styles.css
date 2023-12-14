@@ -343,7 +343,19 @@ footer.main a:hover{
    all: unset
  }
 
+ div#feedback{
+   background-color: lightblue;
+   text-align: center;
+   color: #3a3a3a;
+   width: auto;
+ }
 
-
+ #feedback > span{
+   font-weight: bold;
+   color: black;
+}
+#feedback > span:hover{
+cursor: pointer;
+}
 
 
