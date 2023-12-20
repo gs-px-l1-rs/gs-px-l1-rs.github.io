@@ -303,7 +303,7 @@ function round(x) {
  }
 
  function sendFeedback(){
-    console.log("feedback clicked");
+    //console.log("feedback clicked");
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set('feedback', 'true');
     window.location.search = urlParams;
