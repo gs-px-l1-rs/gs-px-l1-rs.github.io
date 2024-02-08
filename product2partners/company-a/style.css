@@ -23,6 +23,7 @@ body {
   .btn-group button:not(:first-child){
     margin-left: 20px;
   }
+  
   /* Clear floats (clearfix hack) */
   .btn-group:after {
     content: "";
