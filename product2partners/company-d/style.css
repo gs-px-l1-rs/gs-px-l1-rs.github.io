@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #484848; 
+  }
+  
+  .btn-group button {
+    background-color: rgb(99, 100, 99); /* Green background */
+    border: 1px solid rgb(99, 100, 99); /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  .btn-group button:not(:first-child){
+    margin-left: 20px;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #648365;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #logo{
+    float: left;
+    height: 49px;
+  }
+
+#logo_link{
+    margin-left:3%;
+    margin-right: 1%;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(0, 102, 153);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 3%;
+    background-color: rgb(0, 102, 153);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  #main_content{
+    margin: 0px 3% 3% 3%;
+  }
+
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+  }
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  #login-form-submit {
+    width: 145px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+ 
+  #hint-button{
+    width: 145px;
+    padding: 7px;
+    margin-top: 8px;
+    border: 1px dotted #3a3a3a;
+    border-radius: 5px;
+    color: #3a3a3a;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  #projectheaderdiv{
+        margin-top: 2%;
+        width: 50%;
+  }
+  #projectheaderdiv a{
+    font-size: small;
+    float: right;
+  }
+  #projectheader{
+    display: inline;
+  }
+  #draggreen { width: 150px; height: 150px; padding: 0.5em; }
+
+  #dragred { width: 150px; height: 150px; padding: 0.5em; }
+  
+  #dragpink { width: 150px; height: 150px; padding: 0.5em; }
+
+  #save-design-submit {
+    width: 145px;
+    margin: 20% 0 0 3%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #reset-design-submit {
+    width: 145px;
+    margin: 20% 0 0 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #build-design-submit {
+    width: 145px;
+    margin: 20% 0 0 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  #test-button{
+    display: inline;
+    float: left;
+    margin: 180px 0 0 3%;
+  }
+  #test-div{
+    padding: 40px 0 0 0;
+  }
+
+  #deploy-button{
+    float: right;
+    margin: 178px 80% 0 0;
+  }
