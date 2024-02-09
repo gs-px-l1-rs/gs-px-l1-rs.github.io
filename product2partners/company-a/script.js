@@ -21,7 +21,7 @@ function login() {
         acct3: "bct3528fjf",
         acct4: "kfr8395ifn"
     }
-    alert ("logging in");
+    // alert ("logging in");
     if (uEmail === "pxuser1@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
