@@ -11,7 +11,10 @@ body {
     overflow: hidden;
     background-color: #484848; 
   }
-  
+  .inner_navbar {
+    overflow: hidden;
+    background-color: rgb(0, 102, 153); 
+  }
   .btn-group button {
     background-color: rgb(99, 100, 99); /* Green background */
     border: 1px solid rgb(99, 100, 99); /* Green border */
@@ -41,6 +44,14 @@ body {
   }
   
   .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .inner_navbar a {
     float: left;
     font-size: 16px;
     color: white;
