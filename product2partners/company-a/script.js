@@ -4,8 +4,12 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-UWIOTNCPHAJU-2",{"iframeModeEnabled":false, "allowCrossDomain":true});
 
+  function identifyUser(){
+    setTimeout(() => {aptrinsic('identify', {id: '4440a247be37c94c0e8bfbc613d3ba7b'});}, 1500);
+  }
+
   function logout() {
     window.aptrinsic('reset');
     setTimeout(() => { window.location.href="login.html"; }, 500);
 }
-//3JBWPZMJAMBI
+// 3JBWPZMJAMBI
